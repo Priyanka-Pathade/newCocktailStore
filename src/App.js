@@ -10,9 +10,9 @@ function App() {
   return (
     <Router >
        <Navbar />
-         <Route path='/' component={Home}/>
-         <Route path='about' component={About} />
-         <Route path='cocktail/:id' component={SingleCocktail} />
+         <Route exact path='/' component={Home}/>
+         <Route path='/about' component={About} />
+         <Route path='/cocktail/:id' component={SingleCocktail} />
          <Route path='*' component={Error} />
      </Router>
   );
